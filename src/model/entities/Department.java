@@ -2,18 +2,18 @@ package model.entities;
 
 import java.io.Serializable;
 
-public class departament implements Serializable {
+public class Department implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	
 	private Integer id;
 	private String name;
 	
-	public departament() {
+	public Department() {
 	
 	}
 
-	public departament(Integer id, String name) {
+	public Department(Integer id, String name) {
 		this.id = id;
 		this.name = name;
 	}
@@ -50,7 +50,7 @@ public class departament implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		departament other = (departament) obj;
+		Department other = (Department) obj;
 		if (id == null) {
 			if (other.id != null)
 				return false;

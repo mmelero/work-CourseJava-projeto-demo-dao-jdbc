@@ -14,7 +14,7 @@ public class Seller implements Serializable {
 	private Double baseSalary;
 	
 	//Composição conforme modelo de classe
-	private departament departament;
+	private Department department;
 	
 	public Seller() {
 		
@@ -23,14 +23,14 @@ public class Seller implements Serializable {
 	
 
 	public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary,
-			model.entities.departament departament) {
+			model.entities.Department departament) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
 		this.birthDate = birthDate;
 		this.baseSalary = baseSalary;
-		this.departament = departament;
+		this.department = departament;
 	}
 
 	
@@ -97,14 +97,14 @@ public class Seller implements Serializable {
 
 
 
-	public departament getDepartament() {
-		return departament;
+	public Department getDepartment() {
+		return department;
 	}
 
 
 
-	public void setDepartament(departament departament) {
-		this.departament = departament;
+	public void setDepartment(Department department) {
+		this.department = department;
 	}
 
 	
@@ -143,7 +143,7 @@ public class Seller implements Serializable {
 	@Override
 	public String toString() {
 		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", baseSalary="
-				+ baseSalary + ", departament=" + departament + "]";
+				+ baseSalary + ", departament=" + department + "]";
 	}
 
 		
