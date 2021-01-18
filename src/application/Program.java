@@ -1,11 +1,8 @@
 package application;
 
-import java.util.Date;
-
 import model.entities.Seller;
 import model.dao.DaoFactory;
 import model.dao.SellerDao;
-import model.entities.Department;
 
 public class Program {
 
