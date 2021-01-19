@@ -1,5 +1,6 @@
 package application;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
@@ -15,6 +16,7 @@ public class Program2 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
+		List<Department> list = new ArrayList<>();
 		
 		DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 		Department dep = departmentDao.findById(2);
@@ -28,13 +30,13 @@ public class Program2 {
 		for(Seller obj : list) {
 			System.out.println(obj);
 		}
-		
-		System.out.println("\n=== TEST 3: seller findAll =====");
-		list = sellerDao.findAll();
-		for(Seller obj : list) {
-			System.out.println(obj);
+*/		
+		System.out.println("\n=== TEST 2 : Department findAll =====");
+		list = departmentDao.findAll();
+		for(Department department : list) {
+			System.out.println(department);
 		}
-
+/*
 		System.out.println("\n=== TEST 4: seller Insert =====");
 		Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.00, department);
 		sellerDao.insert(newSeller);
