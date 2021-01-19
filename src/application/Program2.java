@@ -40,28 +40,27 @@ public class Program2 {
 			System.out.println(department);
 		}
 
-/*
-		System.out.println("\n=== TEST 5: seller Update =====");
-		seller = sellerDao.findById(1);
-		seller.setName("Martha Waine");
-		sellerDao.update(seller);
+		System.out.println("\n=== TEST 4: Department Update =====");
+		dep = departmentDao.findById(1);
+		dep.setName("Food");
+		departmentDao.update(dep);
 		System.out.println("Updat complete!");
 		
-		list = sellerDao.findAll();
-		for(Seller obj : list) {
+		list = departmentDao.findAll();
+		for(Department obj : list) {
 			System.out.println(obj);
 		}
-		System.out.println("\n=== TEST 6: seller Delete =====");
+
+		System.out.println("\n=== TEST 5: Department Delete =====");
 		System.out.println("Enter id for delete test: ");
 		int id = sc.nextInt();
-		sellerDao.deleteById(id);
+		departmentDao.deleteById(id);
 		System.out.println("Delete complete!");
 		
-		list = sellerDao.findAll();
-		for(Seller obj : list) {
+		list = departmentDao.findAll();
+		for(Department obj : list) {
 			System.out.println(obj);
 		}
-*/
 	}
 
 }
